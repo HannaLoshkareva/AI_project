@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Play");
+
+/* Styles for footer*/
+footer {
+  flex: 0 0 auto;
+  background: #2b9ab5;
+  text-align: center;
+  padding: 6px 0;
+  color: white;
+  font-family: "Play";
+  font-size: 1em;
+}
+
+a.footer-button {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+a.footer-button:active {
+  color: #f0cfa4;
+}
+
+.footer-icons {
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.icons {
+  padding: 0.5vw 1vw;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: left;
+  margin-left: 5vw;
+  margin-bottom: 1vw;
+  padding-top: 15px;
+}
+
+@media all and (max-width: 576px) {
+ 
+  /* Styles for footer*/
+  a.footer-button:hover {
+    text-decoration: underline;
+  }
+}
+
+@media all and (min-width: 577px) and (max-width: 767px) {
+  
+  /* Styles for footer*/
+  a.footer-button:hover {
+    background-color: hsla(192, 76%, 56%, 0.7);
+    border-radius: 2px;
+  }
+
+  a.footer-button:active {
+    background-color: #67a2b1;
+  }
+
+  a.footer-button {
+    padding: 0.5vw 1vw 0.5vw;
+    margin: 0 2vw;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  
+  /* Styles for footer*/
+  a.footer-button {
+    padding: 0.5vw 1vw 0.5vw;
+    margin: 0 2vw;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  
+  /* Styles for footer*/
+  a.footer-button {
+    padding: 0.3vw 2.5vw 1vw;
+    margin: 0 2vw;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px) {
+  
+  /* Styles for footer*/
+  a.footer-button:hover {
+    background-color: hsla(192, 76%, 56%, 0.7);
+    border-radius: 2px;
+  }
+
+  a.footer-button:active {
+    background-color: #67a2b1;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  
+  /* Styles for footer*/
+
+  a.footer-button {
+    padding: 0.25vw 1vw 0.8vw;
+    margin: 0 4vw;
+  }
+
+  a.footer-button:hover {
+    background-color: hsla(192, 76%, 56%, 0.7);
+    border-radius: 2px;
+  }
+
+  a.footer-button:active {
+    background-color: #67a2b1;
+  }
+}

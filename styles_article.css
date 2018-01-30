@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+html, body{
+	display: flex;	
+	flex-direction: column;		
+	width: 100%;
+	height: 100%;	
+	max-width: 1920px;
+	min-width: 1200px;	
+	font-size: 18px;	  	
+}
+
+/* Styles for sections*/
+main{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	margin: 180px 0 20px 0;  		
+}
+
+.section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.image{
+	width: 100%;    
+}
+
+.content, .share{
+	display: flex;
+	align-items: flex-start;
+	margin: 0 12vw;
+}
+
+.caption {
+	color: #E09635;
+	font-family: 'Play';
+	font-size: 2em;
+	font-style: italic;
+	letter-spacing: 1px;
+	padding: 30px 0 20px;	
+}
+
+.publication{	
+	font-family: Verdana;
+	font-size: 12px;
+	padding-bottom: 13px;	 
+}
+
+.date{
+	color: #827F7F;
+}
+
+.author{
+	color: #2b9ab5;
+	text-decoration: underline;
+}
+
+.text{
+	font-family: Verdana;
+	font-size: 0.9em;
+	line-height: 1.2;
+	text-align: justify;
+}
+p{
+	padding: 5px 0;
+}
+
+ul{
+	list-style-type: square;
+	list-style-position: inside;
+	padding: 10px 20px;
+}
+
+.text-image{
+	padding: 10px;
+	text-align: center;		
+}
+
+.subtitle, .share{
+	font-family: 'Play';
+	font-size: 1.5em;
+	font-style: italic;
+	padding-bottom: 5px;
+}
+
+.text-quote{
+	color: #2b9ab5;
+	padding: 15px 0 15px 40px;
+}
+
+.fa-quote-left, .fa-quote-right{
+	padding: 0 10px;
+}
+
+.origin{
+	display: block;
+	font-style: italic;
+	color: #2b9ab5;
+}
+
+a.origin:hover{
+	color: #81cde0;
+	text-decoration: none;
+
+}
+
+a.origin:active{
+	color: #E6952E;
+	text-decoration: none;
+}
+
+a.origin:visited{
+	color: #5A009D;
+}
+
+.share{
+	font-family: 'Play';
+	font-size: 1em;
+	font-style: italic;	
+	color: #E09635;
+	margin-top: 20px;
+}
+
+.share-buttons{
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;		
+}
+
+.share-btn{	
+	border: 1px solid #D0D0D0;
+	padding: 10px 50px;	
+	text-decoration: none;
+}
+
+.share-btn-icon{
+	text-decoration: none;
+	color: grey;
+}
+
+.share-btn-icon:hover{
+	color: white;
+}
+
+a.share-btn-facebook:hover{
+	background-color: #3b5998;			
+}
+
+a.share-btn-twitter:hover{
+	background-color: #55acee;	
+}
+
+a.share-btn-googleplus:hover{
+	background-color: #dd4b39;	
+}
+
+a.share-btn-linkedin:hover{
+	background-color: #007bb5;	
+}
+
+a.share-btn-vk:hover{
+	background-color: #45668e;	
+}
+
+a.share-btn-pinterest:hover{
+	background-color: #cb2027;	
+}
+
+a.share-btn-email:hover{
+	background-color: #4dc247;	
+}
