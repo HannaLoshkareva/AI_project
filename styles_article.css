@@ -1,174 +1,218 @@
 @import url('https://fonts.googleapis.com/css?family=Play');
-html, body{
-	display: flex;	
-	flex-direction: column;		
-	width: 100%;
-	height: 100%;	
-	max-width: 1920px;
-	min-width: 1200px;	
-	font-size: 18px;	  	
+html, body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  font-size: 18px;
 }
 
 /* Styles for sections*/
-main{
-	display: flex;
-	flex-direction: column;
-	flex: 1 0 auto;
-	margin: 180px 0 20px 0;  		
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin: 180px 0 0;
 }
 
-.section{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
-.image{
-	width: 100%;    
+.image {
+  width: 100%;
+  overflow: hidden;
 }
 
-.content, .share{
-	display: flex;
-	align-items: flex-start;
-	margin: 0 12vw;
+.content, .share {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 12vw;
 }
 
 .caption {
-	color: #E09635;
-	font-family: 'Play';
-	font-size: 2em;
-	font-style: italic;
-	letter-spacing: 1px;
-	padding: 30px 0 20px;	
+  color: #E09635;
+  font-family: 'Play';
+  font-size: 2em;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 30px 0 20px;
 }
 
-.publication{	
-	font-family: Verdana;
-	font-size: 12px;
-	padding-bottom: 13px;	 
+.publication {
+  font-family: Verdana;
+  font-size: 12px;
+  padding-bottom: 13px;
 }
 
-.date{
-	color: #827F7F;
+.date {
+  color: #827F7F;
 }
 
-.author{
-	color: #2b9ab5;
-	text-decoration: underline;
+.author {
+  color: #2b9ab5;
+  text-decoration: underline;
 }
 
-.text{
-	font-family: Verdana;
-	font-size: 0.9em;
-	line-height: 1.2;
-	text-align: justify;
-}
-p{
-	padding: 5px 0;
+.text {
+  font-family: Verdana;
+  font-size: 0.9em;
+  line-height: 1.2;
+  text-align: justify;
 }
 
-ul{
-	list-style-type: square;
-	list-style-position: inside;
-	padding: 10px 20px;
+p {
+  padding: 5px 0;
 }
 
-.text-image{
-	padding: 10px;
-	text-align: center;		
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 10px 20px;
 }
 
-.subtitle, .share{
-	font-family: 'Play';
-	font-size: 1.5em;
-	font-style: italic;
-	padding-bottom: 5px;
+.text-image {
+  padding: 10px;
+  text-align: center;
 }
 
-.text-quote{
-	color: #2b9ab5;
-	padding: 15px 0 15px 40px;
+.subtitle, .share {
+  font-family: 'Play';
+  font-size: 1.5em;
+  font-style: italic;
+  padding-bottom: 5px;
 }
 
-.fa-quote-left, .fa-quote-right{
-	padding: 0 10px;
+.text-quote {
+  color: #2b9ab5;
+  padding: 15px 0 15px 40px;
 }
 
-.origin{
-	display: block;
-	font-style: italic;
-	color: #2b9ab5;
+.fa-quote-left, .fa-quote-right {
+  padding: 0 10px;
 }
 
-a.origin:hover{
-	color: #81cde0;
-	text-decoration: none;
-
+.origin {
+  display: block;
+  font-style: italic;
+  color: #2b9ab5;
 }
 
-a.origin:active{
-	color: #E6952E;
-	text-decoration: none;
+a.origin:hover {
+  color: #81cde0;
+  text-decoration: none;
 }
 
-a.origin:visited{
-	color: #5A009D;
+a.origin:active {
+  color: #E6952E;
+  text-decoration: none;
 }
 
-.share{
-	font-family: 'Play';
-	font-size: 1em;
-	font-style: italic;	
-	color: #E09635;
-	margin-top: 20px;
+a.origin:visited {
+  color: #5A009D;
 }
 
-.share-buttons{
-	width: 100%;
-	height: 40px;
-	margin-top: 20px;		
+.share {
+  font-family: 'Play';
+  font-size: 1em;
+  font-style: italic;
+  color: #E09635;
+  margin-top: 20px;
 }
 
-.share-btn{	
-	border: 1px solid #D0D0D0;
-	padding: 10px 50px;	
-	text-decoration: none;
+.share-buttons {
+  width: 100%;
+  margin: 20px 0;
 }
 
-.share-btn-icon{
-	text-decoration: none;
-	color: grey;
+.share-btn {
+  border: 1px solid #D0D0D0;
+  text-decoration: none;
 }
 
-.share-btn-icon:hover{
-	color: white;
+.share-btn-icon {
+  text-decoration: none;
+  color: grey;
 }
 
-a.share-btn-facebook:hover{
-	background-color: #3b5998;			
+.share-btn-icon:hover {
+  color: white;
 }
 
-a.share-btn-twitter:hover{
-	background-color: #55acee;	
+a.share-btn-facebook:hover {
+  background-color: #3b5998;
 }
 
-a.share-btn-googleplus:hover{
-	background-color: #dd4b39;	
+a.share-btn-twitter:hover {
+  background-color: #55acee;
 }
 
-a.share-btn-linkedin:hover{
-	background-color: #007bb5;	
+a.share-btn-googleplus:hover {
+  background-color: #dd4b39;
 }
 
-a.share-btn-vk:hover{
-	background-color: #45668e;	
+a.share-btn-linkedin:hover {
+  background-color: #007bb5;
 }
 
-a.share-btn-pinterest:hover{
-	background-color: #cb2027;	
+a.share-btn-vk:hover {
+  background-color: #45668e;
 }
 
-a.share-btn-email:hover{
-	background-color: #4dc247;	
+a.share-btn-pinterest:hover {
+  background-color: #cb2027;
+}
+
+a.share-btn-email:hover {
+  background-color: #4dc247;
+}
+
+@media all and (min-width: 360px) and (max-width: 576px) {
+  .img {
+    width: 300px;
+  }
+  .share-btn {
+    padding: 10px 2vw;
+  }
+}
+
+@media all and (min-width: 577px) and (max-width: 767px) {
+  .img {
+    width: 400px;
+  }
+  .share-btn {
+    padding: 10px 3vw;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .img {
+    width: 500px;
+  }
+  .share-btn {
+    padding: 10px 3.5vw;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .img {
+    width: 600px;
+  }
+  .share-btn {
+    padding: 10px 3vw;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .img {
+    width: 800px;
+  }
+  .share-btn {
+    padding: 10px 4vw;
+  }
 }

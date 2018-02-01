@@ -1,293 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>О проекте</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="styles_header_sections.css">
-    <link rel="stylesheet" type="text/css" href="styles_about.css">
-    <link rel="stylesheet" type="text/css" href="styles_footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-  </head>
-  <body>
-    <header class="header">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 290 290">
-  <defs>
 
-    <filter id="dropshadow">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="11"/>
-        <feOffset dx="3" dy="3" result="offsetblur"/>
-        <feFlood flood-color="rgb(0,0,0)" flood-opacity="0.22"/>
-        <feComposite in2="offsetblur" operator="in"/>
-        <feMerge>
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-    </filter>
-    <filter id="dropshadow-inner">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
-        <feOffset dx="0" dy="0" result="offsetblur"/>
-        <feFlood flood-color="rgb(0,0,0)" flood-opacity="0.22"/>
-        <feComposite in2="offsetblur" operator="in"/>
-        <feMerge>
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-    </filter>
-  <!-- filter="url(#dropshadow-inner)" -->
-    <linearGradient id="linear-gradient" x1="18.7579" y1="145" x2="271.2421" y2="145" gradientUnits="userSpaceOnUse">
-      <stop offset="0.0049" stop-color="#00d4f6"/>
-      <stop offset="1" stop-color="#1ccfc9"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="54.1481" y1="68.6702" x2="102.7685" y2="68.6702" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff8d36"/>
-      <stop offset="0.0063" stop-color="#ff963d"/>
-      <stop offset="0.0199" stop-color="#ffa145"/>
-      <stop offset="0.0392" stop-color="#ffa84b"/>
-      <stop offset="0.0925" stop-color="#ffaa4c"/>
-      <stop offset="0.8743" stop-color="#ffaa4c"/>
-      <stop offset="0.9425" stop-color="#ffaa4c"/>
-      <stop offset="0.9921" stop-color="#ff9139"/>
-      <stop offset="1" stop-color="#ff8d36"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-3" x1="121.1481" y1="68.6702" x2="169.7685" y2="68.6702" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#6531ab"/>
-      <stop offset="0.0009" stop-color="#6534af"/>
-      <stop offset="0.0068" stop-color="#6641c5"/>
-      <stop offset="0.0136" stop-color="#674cd6"/>
-      <stop offset="0.0222" stop-color="#6854e1"/>
-      <stop offset="0.0342" stop-color="#6858e8"/>
-      <stop offset="0.0675" stop-color="#6859ea"/>
-      <stop offset="0.8631" stop-color="#6859ea"/>
-      <stop offset="0.9325" stop-color="#6859ea"/>
-      <stop offset="0.9617" stop-color="#6749d1"/>
-      <stop offset="1" stop-color="#6531ab"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-4" x1="187.8505" y1="68.6702" x2="236.4709" y2="68.6702" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#943b2e"/>
-      <stop offset="0.0067" stop-color="#a54133"/>
-      <stop offset="0.0164" stop-color="#b64739"/>
-      <stop offset="0.0285" stop-color="#c14c3c"/>
-      <stop offset="0.0454" stop-color="#c84e3e"/>
-      <stop offset="0.0925" stop-color="#ca4f3f"/>
-      <stop offset="0.3895" stop-color="#cd5040"/>
-      <stop offset="0.5025" stop-color="#d15241"/>
-      <stop offset="0.8275" stop-color="#ca4f3f"/>
-      <stop offset="0.9017" stop-color="#c84e3e"/>
-      <stop offset="0.9338" stop-color="#c14b3c"/>
-      <stop offset="0.9577" stop-color="#b44738"/>
-      <stop offset="0.9776" stop-color="#a24033"/>
-      <stop offset="0.9948" stop-color="#8c372c"/>
-      <stop offset="1" stop-color="#833429"/>
-    </linearGradient>
-  </defs>
-  <title>AI Systems Total Control</title>
-  <g style="isolation: isolate">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>О проекте</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles_header_sections.css">
+  <style>
+    .about {
+      background-color: #67a2b1;
+      border-radius: 2px;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="styles_about.css">
+  <link rel="stylesheet" type="text/css" href="styles_footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-          <path d="M38.508,251.49C18.0556,231.0373,18.7609,197.89,18.7609,144.291s0-86.0411,19.7471-105.7882C58.96,18.05,92.1074,18.7557,145.7067,18.7557s86.0411,0,105.7882,19.7471l-.0029.0075C271.9444,58.9627,271.2391,92.11,271.2391,145.709s0,86.0411-19.7471,105.7882C231.04,271.95,197.8926,271.2443,144.2933,271.2443s-86.0411,0-105.7882-19.7471Z" fill="url(#linear-gradient)" filter="url(#dropshadow)"/>
-          <rect width="290" height="290" fill="none"/>
-          <g filter="url(#dropshadow-inner)">
-            <path d="M54.1481,63.4248h48.62a0,0,0,0,1,0,0v6.4907a4,4,0,0,1-4,4h-40.62a4,4,0,0,1-4-4V63.4248A0,0,0,0,1,54.1481,63.4248Z" fill="url(#linear-gradient-2)"/>
-            <path d="M121.1481,63.4248h48.62a0,0,0,0,1,0,0v6.4907a4,4,0,0,1-4,4h-40.62a4,4,0,0,1-4-4V63.4248a0,0,0,0,1,0,0Z" fill="url(#linear-gradient-3)"/>
-            <path d="M187.85,63.4248h48.62a0,0,0,0,1,0,0v6.4907a4,4,0,0,1-4,4H191.85a4,4,0,0,1-4-4V63.4248A0,0,0,0,1,187.85,63.4248Z" fill="url(#linear-gradient-4)"/>
-            <rect x="54.4457" y="48.4557" width="48.6204" height="20.4054" rx="4" ry="4" fill="#fcd462"/>
-            <rect x="121.1481" y="48.4557" width="48.6205" height="20.4054" rx="4" ry="4" fill="#867aee"/>
-            <rect x="187.8505" y="48.4557" width="48.6204" height="20.4054" rx="4" ry="4" fill="#e56353"/>
-            <rect x="66.3427" y="96.4208" width="7.0661" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="69.8758" cy="198.0634" r="15.4299" fill="#fcd462"/>
-              <path d="M79.6051,186.1782C77.5421,196.6215,70.95,206.0127,59.78,209.6458a15.3639,15.3639,0,1,0,19.8255-23.4676Z" fill="#f6c358"/>
-            </g>
-            <rect x="104.1337" y="96.4208" width="7.0665" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="107.6669" cy="127.1222" r="15.4297" fill="#e56353"/>
-              <path d="M117.3962,115.2366c-2.0627,10.4437-8.6545,19.8348-19.8252,23.4675a15.3638,15.3638,0,1,0,19.8252-23.4675Z" fill="#d15241"/>
-            </g>
-            <rect x="141.9251" y="96.4208" width="7.0665" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="145.4584" cy="167.975" r="15.4298" fill="#ebf0f3"/>
-              <path d="M155.1875,156.09c-2.0625,10.4433-8.6548,19.8344-19.8251,23.4676A15.3638,15.3638,0,1,0,155.1875,156.09Z" fill="#e1e6e9"/>
-            </g>
-            <rect x="179.7165" y="96.4208" width="7.0665" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="183.2497" cy="214.824" r="15.4299" fill="#27a2db"/>
-              <path d="M192.9789,202.9388c-2.0626,10.4433-8.6548,19.8348-19.8255,23.4675a15.3639,15.3639,0,1,0,19.8255-23.4675Z" fill="#2d93ba"/>
-            </g>
-            <rect x="217.5079" y="96.4208" width="7.0661" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="221.0408" cy="138.502" r="15.4299" fill="#44c4a1"/>
-              <path d="M230.77,126.6164c-2.063,10.4437-8.6548,19.8348-19.8255,23.4675A15.3639,15.3639,0,1,0,230.77,126.6164Z" fill="#3ea69b"/>
-            </g>
-          </g>
-  </g>
-</svg>
-     	
-    	<div class="side-bar">
-    		<a href="index.html" class="logo">Искусственный интеллект</a>
-            <div class="header-line"></div>
-    		<div class="header-buttons">
-    			<a href="attainments.html" class="header-button">Достижения</a>
-                <a href="problems.html" class="header-button">Проблемы</a>
-                <a href="philosophy.html" class="header-button">Философия<a>
-                <a href="perspectives.html" class="header-button">Перспективы</a>
-                <a href="about.html" class="header-button">О проекте</a>
-    		</div>
-    	</div>
+<body>
+  <header class="header">    
+    <div class="side-bar">
+      <a href="index.html" class="logo" title="На главную">Искусственный интеллект</a>
+      <div class="header-line"></div>
+      <div class="header-buttons">
+        <a href="attainments.html" class="header-button attainments">Достижения</a>
+        <a href="problems.html" class="header-button problems">Проблемы</a>
+        <a href="philosophy.html" class="header-button philosophy">Философия<a>
+        <a href="perspectives.html" class="header-button perspectives">Перспективы</a>
+        <a href="about.html" class="header-button about">О проекте</a>
+      </div>
+    </div>   
+  </header>
 
-         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 290 290">
-  <defs>
-
-    <filter id="dropshadow">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="11"/>
-        <feOffset dx="3" dy="3" result="offsetblur"/>
-        <feFlood flood-color="rgb(0,0,0)" flood-opacity="0.22"/>
-        <feComposite in2="offsetblur" operator="in"/>
-        <feMerge>
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-    </filter>
-    <filter id="dropshadow-inner">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
-        <feOffset dx="0" dy="0" result="offsetblur"/>
-        <feFlood flood-color="rgb(0,0,0)" flood-opacity="0.22"/>
-        <feComposite in2="offsetblur" operator="in"/>
-        <feMerge>
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-    </filter>
-  <!-- filter="url(#dropshadow-inner)" -->
-    <linearGradient id="linear-gradient" x1="18.7579" y1="145" x2="271.2421" y2="145" gradientUnits="userSpaceOnUse">
-      <stop offset="0.0049" stop-color="#00d4f6"/>
-      <stop offset="1" stop-color="#1ccfc9"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="54.1481" y1="68.6702" x2="102.7685" y2="68.6702" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff8d36"/>
-      <stop offset="0.0063" stop-color="#ff963d"/>
-      <stop offset="0.0199" stop-color="#ffa145"/>
-      <stop offset="0.0392" stop-color="#ffa84b"/>
-      <stop offset="0.0925" stop-color="#ffaa4c"/>
-      <stop offset="0.8743" stop-color="#ffaa4c"/>
-      <stop offset="0.9425" stop-color="#ffaa4c"/>
-      <stop offset="0.9921" stop-color="#ff9139"/>
-      <stop offset="1" stop-color="#ff8d36"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-3" x1="121.1481" y1="68.6702" x2="169.7685" y2="68.6702" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#6531ab"/>
-      <stop offset="0.0009" stop-color="#6534af"/>
-      <stop offset="0.0068" stop-color="#6641c5"/>
-      <stop offset="0.0136" stop-color="#674cd6"/>
-      <stop offset="0.0222" stop-color="#6854e1"/>
-      <stop offset="0.0342" stop-color="#6858e8"/>
-      <stop offset="0.0675" stop-color="#6859ea"/>
-      <stop offset="0.8631" stop-color="#6859ea"/>
-      <stop offset="0.9325" stop-color="#6859ea"/>
-      <stop offset="0.9617" stop-color="#6749d1"/>
-      <stop offset="1" stop-color="#6531ab"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-4" x1="187.8505" y1="68.6702" x2="236.4709" y2="68.6702" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#943b2e"/>
-      <stop offset="0.0067" stop-color="#a54133"/>
-      <stop offset="0.0164" stop-color="#b64739"/>
-      <stop offset="0.0285" stop-color="#c14c3c"/>
-      <stop offset="0.0454" stop-color="#c84e3e"/>
-      <stop offset="0.0925" stop-color="#ca4f3f"/>
-      <stop offset="0.3895" stop-color="#cd5040"/>
-      <stop offset="0.5025" stop-color="#d15241"/>
-      <stop offset="0.8275" stop-color="#ca4f3f"/>
-      <stop offset="0.9017" stop-color="#c84e3e"/>
-      <stop offset="0.9338" stop-color="#c14b3c"/>
-      <stop offset="0.9577" stop-color="#b44738"/>
-      <stop offset="0.9776" stop-color="#a24033"/>
-      <stop offset="0.9948" stop-color="#8c372c"/>
-      <stop offset="1" stop-color="#833429"/>
-    </linearGradient>
-  </defs>
-  <title>AI Systems Total Control</title>
-  <g style="isolation: isolate">
-
-          <path d="M38.508,251.49C18.0556,231.0373,18.7609,197.89,18.7609,144.291s0-86.0411,19.7471-105.7882C58.96,18.05,92.1074,18.7557,145.7067,18.7557s86.0411,0,105.7882,19.7471l-.0029.0075C271.9444,58.9627,271.2391,92.11,271.2391,145.709s0,86.0411-19.7471,105.7882C231.04,271.95,197.8926,271.2443,144.2933,271.2443s-86.0411,0-105.7882-19.7471Z" fill="url(#linear-gradient)" filter="url(#dropshadow)"/>
-          <rect width="290" height="290" fill="none"/>
-          <g filter="url(#dropshadow-inner)">
-            <path d="M54.1481,63.4248h48.62a0,0,0,0,1,0,0v6.4907a4,4,0,0,1-4,4h-40.62a4,4,0,0,1-4-4V63.4248A0,0,0,0,1,54.1481,63.4248Z" fill="url(#linear-gradient-2)"/>
-            <path d="M121.1481,63.4248h48.62a0,0,0,0,1,0,0v6.4907a4,4,0,0,1-4,4h-40.62a4,4,0,0,1-4-4V63.4248a0,0,0,0,1,0,0Z" fill="url(#linear-gradient-3)"/>
-            <path d="M187.85,63.4248h48.62a0,0,0,0,1,0,0v6.4907a4,4,0,0,1-4,4H191.85a4,4,0,0,1-4-4V63.4248A0,0,0,0,1,187.85,63.4248Z" fill="url(#linear-gradient-4)"/>
-            <rect x="54.4457" y="48.4557" width="48.6204" height="20.4054" rx="4" ry="4" fill="#fcd462"/>
-            <rect x="121.1481" y="48.4557" width="48.6205" height="20.4054" rx="4" ry="4" fill="#867aee"/>
-            <rect x="187.8505" y="48.4557" width="48.6204" height="20.4054" rx="4" ry="4" fill="#e56353"/>
-            <rect x="66.3427" y="96.4208" width="7.0661" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="69.8758" cy="198.0634" r="15.4299" fill="#fcd462"/>
-              <path d="M79.6051,186.1782C77.5421,196.6215,70.95,206.0127,59.78,209.6458a15.3639,15.3639,0,1,0,19.8255-23.4676Z" fill="#f6c358"/>
-            </g>
-            <rect x="104.1337" y="96.4208" width="7.0665" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="107.6669" cy="127.1222" r="15.4297" fill="#e56353"/>
-              <path d="M117.3962,115.2366c-2.0627,10.4437-8.6545,19.8348-19.8252,23.4675a15.3638,15.3638,0,1,0,19.8252-23.4675Z" fill="#d15241"/>
-            </g>
-            <rect x="141.9251" y="96.4208" width="7.0665" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="145.4584" cy="167.975" r="15.4298" fill="#ebf0f3"/>
-              <path d="M155.1875,156.09c-2.0625,10.4433-8.6548,19.8344-19.8251,23.4676A15.3638,15.3638,0,1,0,155.1875,156.09Z" fill="#e1e6e9"/>
-            </g>
-            <rect x="179.7165" y="96.4208" width="7.0665" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="183.2497" cy="214.824" r="15.4299" fill="#27a2db"/>
-              <path d="M192.9789,202.9388c-2.0626,10.4433-8.6548,19.8348-19.8255,23.4675a15.3639,15.3639,0,1,0,19.8255-23.4675Z" fill="#2d93ba"/>
-            </g>
-            <rect x="217.5079" y="96.4208" width="7.0661" height="142.8161" fill="#3a556a" opacity="0.68" style="mix-blend-mode: multiply"/>
-            <g>
-              <circle cx="221.0408" cy="138.502" r="15.4299" fill="#44c4a1"/>
-              <path d="M230.77,126.6164c-2.063,10.4437-8.6548,19.8348-19.8255,23.4675A15.3639,15.3639,0,1,0,230.77,126.6164Z" fill="#3ea69b"/>
-            </g>
-          </g>
-  </g>
-</svg>
-    </header>
-     
-   	<main>            
-    	<section class="section content">
-                <img class="image" src="images/about.jpg" alt="О проекте">
-                <div class="text">На каком этапе человек сможет создать искусственный разум, который будет иметь желание взбунтоваться против людей? Сможем ли мы в скором будущем жить без «умных» вещей» и будет ли у нас виртуальное правительство? Сегодня об этих вопросах мы можем лишь размышлять. Но будущее приближается к нам намного быстрее, чем мы ожидаем,а потому и ответы на эти вопросы скоро будут нам открыты.
-                </div>
-                <div class="main-line"></div>                 		
-    	</section>
-        <section class="section form">            
-            <div class="caption-form">Ваши впечатления, пожелания и предложения можно отправить нам, заполнив данную форму</div>
-            <form action="#">
-                <div class="field">
-                    <input type="text" id="name" name="name" placeholder="Ваше имя*">
-                </div>
-                <div class="field">
-                    <input type="text" id="email" name="email" placeholder="Ваш e-mail*">
-                </div>        
-                <div class="field">
-                    <textarea id="subject" name="subject" placeholder="Сообщение*" style="height:200px"></textarea>
-                </div>                
-                <input type="submit" value="Отправить">
-            </form>
-        </section>                                  
-    </main>
-     <footer class="footer">
-        <div class="footer-menu">            
-            <div class="footer-buttons">
-                <a href="attainments.html" class="footer-button">Достижения</a>
-                <a href="problems.html" class="footer-button">Проблемы</a>
-                <a href="philosophy.html" class="footer-button">Философия<a>
-                <a href="perspectives.html" class="footer-button">Перспективы</a>
-                <a href="about.html" class="footer-button">О проекте</a>
-            </div>            
-        </div>        
-            <div class="footer-icons">
-            <a href="https://www.facebook.com/art.int4u/" class="icons fa fa-facebook-official" target="_blank"></a>
-            <a href="https://www.instagram.com/explore/tags/artificialintelligence/" class="icons fa fa-instagram" target="_blank"></a>
-            <a href="https://plus.google.com/communities/116461000134682563789" class="icons fa fa-google-plus-square" target="_blank"></a>
-            <a href="https://www.youtube.com/user/Maaaarth" class="icons fa fa-youtube-square" target="_blank"></a>
-            <a href="https://twitter.com/glennai" class="icons fa fa-twitter-square" target="_blank"></a>
-            </div>
-            <div class="copyright">&copy;Искусственный интеллект 2018
+  <main>
+    <section class="section content">
+      <img class="image" src="images/about.jpg" alt="О проекте">
+      <div class="text">На каком этапе человек сможет создать искусственный разум, который будет иметь желание взбунтоваться против людей? Сможем ли мы в скором будущем жить без «умных» вещей» и будет ли у нас виртуальное правительство? Сегодня об этих вопросах мы можем лишь размышлять. Но будущее приближается к нам намного быстрее, чем мы ожидаем,а потому и ответы на эти вопросы скоро будут нам открыты.
+      </div>
+      <div class="main-line"></div>
+    </section>
+    <section class="section form">
+      <div class="caption-form">Ваши впечатления, пожелания и предложения можно отправить нам, заполнив данную форму</div>
+      <form action="https://www.google.com">
+        <div class="field">
+          <input type="text" id="name" name="name" required placeholder="Ваше имя*">
         </div>
-    </footer>
-  </body>
+        <div class="field">
+          <input type="text" id="email" name="email" required placeholder="Ваш e-mail*">
+        </div>
+        <div class="field">
+          <textarea type="text" id="subject" name="subject" required placeholder="Сообщение*" style="height:200px"></textarea>
+        </div>
+        <input type="submit" value="Отправить">
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-menu">
+      <div class="footer-buttons">
+        <a href="attainments.html" class="footer-button">Достижения</a>
+        <a href="problems.html" class="footer-button">Проблемы</a>
+        <a href="philosophy.html" class="footer-button">Философия<a>
+        <a href="perspectives.html" class="footer-button">Перспективы</a>
+        <a href="about.html" class="footer-button">О проекте</a>
+      </div>
+    </div>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/art.int4u/" class="icons fa fa-facebook-official" target="_blank" title="Facebook"></a>
+      <a href="https://www.instagram.com/explore/tags/artificialintelligence/" class="icons fa fa-instagram" target="_blank" title="Instagram"></a>
+      <a href="https://plus.google.com/communities/116461000134682563789" class="icons fa fa-google-plus-square" target="_blank" title="Google+"></a>
+      <a href="https://www.youtube.com/user/Maaaarth" class="icons fa fa-youtube-square" target="_blank" title="YouTube"></a>
+      <a href="https://twitter.com/glennai" class="icons fa fa-twitter-square" target="_blank" title="Twitter"></a>
+    </div>
+    <div class="copyright">&copy;Искусственный интеллект 2018
+    </div>
+  </footer>
+</body>
+
 </html>
