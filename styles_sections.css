@@ -33,6 +33,7 @@ main {
 
 #viewport {
   width: 100%;
+  height: 100%;
   display: table;
   position: relative;
   overflow: hidden;
@@ -71,7 +72,7 @@ main {
 }
 
 .slide-img {
-  width: 100%;
+  width: 100%;  
 }
 
 #prev-btn, #next-btn {
@@ -116,25 +117,26 @@ main {
   cursor: pointer;
 }
 
-/*.slider-content{
-    outline: solid .5em white;
-    outline-offset: -10px;
-    padding: 10px;
-    margin: 0 auto;
-    width: 1700px;
-    height: 400px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 30px;
-    left: 100px;
+.slider-content{
+  position: absolute;  
+  width: calc(100%/3);
+  text-align: center;  
+  font-family: 'Play';  
+  text-shadow: 3px 3px 4px black;
 }
 
-.next-button{
-  border: 3px solid black;
-  margin: 0 200px;
+.slide-caption{
+  color: white;  
+  font-weight: bold;  
+}
 
-}*/
+.slide-read-more-button{ 
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-style: italic;  
+}
 
 /*Styles for content*/
 
@@ -187,32 +189,15 @@ main {
   font-style: italic;
 }
 
-@media all and (min-width: 360px) {
-  /*Styles for slider*/
-  #block-for-slider {
-    min-width: 360px;
+@media all and (min-width: 360px) and (max-width: 767px){
+  main{
+   margin-top: 170px;
   }
-  #prev-btn, #next-btn {
-    font-size: 30px;
-  }
-  .slide-nav-btn {
-    width: 10px;
-    height: 10px;
-  }
-}
 
-@media all and (min-width: 577px) and (max-width: 767px) {
   /*Styles for slider*/
   #block-for-slider {
-    min-width: 550px;
-  }
-  #prev-btn, #next-btn {
-    font-size: 30px;
-  }
-  .slide-nav-btn {
-    width: 10px;
-    height: 10px;
-  }
+    display: none;
+  }  
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -226,6 +211,20 @@ main {
   .slide-nav-btn {
     width: 12px;
     height: 12px;
+  }
+
+  .slider-content{  
+    top: 8vh;  
+  }
+
+  .slide-caption{  
+    font-size: 1.2em;
+    padding-bottom: 3vh;  
+  }
+
+  .slide-read-more-button{
+    font-size: 0.8em;
+    border: 2px solid white;    
   }
 }
 
@@ -241,9 +240,23 @@ main {
     width: 12px;
     height: 12px;
   }
+
+  .slider-content{  
+    top: 8vh;  
+  }
+
+  .slide-caption{  
+    font-size: 1.6em;
+    padding-bottom: 5vh;  
+  }
+
+  .slide-read-more-button{
+    font-size: 1em;
+    border: 2px solid white;    
+  }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1200px) and (max-width: 1599px){
   /* Styles for sections*/
   main {
     margin: 20px 15vw;
@@ -258,5 +271,51 @@ main {
   .slide-nav-btn {
     width: 15px;
     height: 15px;
+  }
+
+  .slider-content{  
+    top: 12vh;  
+  }
+
+  .slide-caption{  
+    font-size: 2em;
+    padding-bottom: 5vh;  
+  }
+
+  .slide-read-more-button{
+    font-size: 1.5em;
+    border: 2px solid white;    
+  }
+}
+
+@media all and (min-width: 1600px){
+  /* Styles for sections*/
+  main {
+    margin: 20px 15vw;
+  }
+  /*Styles for slider*/
+  #block-for-slider {
+    min-width: 1600px;
+  }
+  #prev-btn, #next-btn {
+    font-size: 50px;
+  }
+  .slide-nav-btn {
+    width: 15px;
+    height: 15px;
+  }
+
+  .slider-content{  
+    top: 15vh;  
+  }
+
+  .slide-caption{  
+    font-size: 3em;
+    padding-bottom: 10vh;  
+  }
+
+  .slide-read-more-button{
+    font-size: 2em;
+    border: 4px solid white;    
   }
 }

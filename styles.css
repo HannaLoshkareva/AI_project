@@ -31,6 +31,7 @@ html, body {
 svg {
   transform: scale(-1, 1);
   max-height: 28vh;
+  margin: 10px 0;
 }
 
 .header-quote {
@@ -51,7 +52,7 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 2;
+  flex: 2;  
 }
 
 .logo {
@@ -139,6 +140,9 @@ a#onward {
   color: #5fabbe;
   text-decoration: none;
   line-height: 1.6;
+  display: block;
+  text-align: center;
+  height: 100%;
 }
 
 .section-footer:hover {
@@ -184,8 +188,7 @@ a#onward {
   text-align: right;
 }
 
-.slider-image {
-  margin-left: 30px;
+.slider-image {  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -310,7 +313,7 @@ a#onward {
   }
   .slider-image {
     width: 240px;
-    height: 300px;
+    height: 300px;       
   }
 }
 
@@ -389,6 +392,10 @@ a#onward {
   #slides {
     height: 450px;
   }
+
+  .slider-image {    
+    margin-left: 20px;    
+  }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
@@ -411,6 +418,10 @@ a#onward {
     margin-left: 350px;
     top: 20vh;
     padding: 5px;
+  }
+
+  .slider-image {    
+    margin-left: 20px;    
   }
 }
 
@@ -487,5 +498,9 @@ a#onward {
   .slider-quote {
     left: 400px;
     top: 20vh;
+  }
+
+  .slider-image {    
+    margin-left: 25px;    
   }
 }

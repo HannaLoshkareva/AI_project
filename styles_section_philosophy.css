@@ -38,32 +38,45 @@ main {
   max-width: 500px;
 }
 
+.info{
+  display: flex;
+  flex-direction: column;   
+}
+
+.info-main, .section-name{
+  padding: 10px 20px;
+}
+
 img.main-news, img.image-tranding {
   width: 100%;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .news-time {
   font-size: 12px;
-  color: gray;
-  padding: 10px 20px;
+  color: gray;  
 }
 
 .caption, .section-name {
-  padding: 10px 20px;
+  
   font-family: 'Play';
   font-style: italic;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .caption {
   cursor: pointer;
+  padding: 10px 20px 10px 0;
 }
 
 .text {
   font-size: 0.9em;
-  padding: 0 20px 10px;
+  padding: 0 20px 10px 0;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .caption:hover {
@@ -78,7 +91,9 @@ img.main-news, img.image-tranding {
 }
 
 img.image-news {
-  width: 200px;  
+  width: 200px;
+  height: 133px;
+  padding: 0 20px 10px 0;  
 }
 
 .section-name {
