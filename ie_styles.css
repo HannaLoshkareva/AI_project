@@ -1,11 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Play");
 html, body {
-  display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+  display: flex;  
+  -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
   height: 100%;
@@ -15,40 +11,32 @@ html, body {
 
 /* Styles for header*/
 
-.header {
-  display: -webkit-box;
+.header {  
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+  -ms-flex-direction: column;
           flex-direction: column;
   max-height: 465px;
   min-height: 400px;
   color: white;
   background-color: #71b1c1;
-  font-family: "Play";
+  font-family: "Arial";
   background: radial-gradient(circle, #c0e4ed 1%, #81cde0 30%, #71b1c1 60%);
 }
 
-.header-top {
-  display: -webkit-box;
+.header-top {  
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
+  display: flex;  
+  -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+  -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
+  -ms-flex: 4;
           flex: 4;
 }
 
 svg {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
+  transform: scale(-1, 1);
   max-height: 28vh;
   margin: 10px 0;
 }
@@ -67,19 +55,14 @@ svg {
   position: relative;
 }
 
-.side-bar {
-  display: -webkit-box;
+.side-bar {  
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+  display: flex;  
+  -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+  -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
+  -ms-flex: 2;
           flex: 2;  
 }
 
@@ -108,8 +91,7 @@ a.header-button:active {
 /* Styles for sections*/
 
 main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
+-ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
 
@@ -122,12 +104,11 @@ main {
 }
 
 .section-header {
-  height: 40px;
-  background: -webkit-gradient(linear, left top, right top, from(#eaa043), to(white));
+  height: 40px;  
   background: linear-gradient(to right, #eaa043, white);
   padding: 3px 30px;
   color: #155d6f;
-  font-family: "Play";
+  font-family: "Arial";
   font-size: 1.7em;
 }
 
@@ -138,31 +119,24 @@ main {
 }
 
 #attainments .image, #philosophy .image {
-  -webkit-box-shadow: 10px 20px 50px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 10px 20px 50px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 20px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
 #problems .image, #perspective .image {
-  -webkit-box-shadow: 0px 20px 50px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 20px 50px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 50px 10px rgba(0, 0, 0, 0.2);
 }
 
 .section-inner {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.in-section-inner {
-  display: -webkit-box;
+.in-section-inner {  
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+  -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
+  -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
@@ -177,7 +151,7 @@ main {
 }
 
 a.onward {
-  font-family: "Play";
+  font-family: "Arial";
   font-size: 1.5em;
   color: #5fabbe;
   text-decoration: none;
@@ -188,8 +162,7 @@ a.onward {
 }
 
 .section-footer:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #problems, #perspective {
@@ -216,8 +189,7 @@ a.onward {
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
   padding: 40px 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .slider-quote {
@@ -286,14 +258,12 @@ a.onward {
     font-size: 2em;
     text-align: center;
   }
-  .header-buttons {
-    display: -webkit-box;
+  .header-buttons {    
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
+    -ms-flex-pack: center;
             justify-content: center;
   }
   a.header-button {
@@ -321,14 +291,12 @@ a.onward {
 @media all and (max-width: 767px) {
   /* Styles for header*/
   .header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
+    -ms-flex-pack: center;
             justify-content: center;
     min-height: 400px;
   }
   .side-bar {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
+    -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .header-buttons {
@@ -350,17 +318,13 @@ a.onward {
     margin-bottom: 20px;
   }
   .section-inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+    -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+    -ms-flex-align: center;
             align-items: center;
   }
   .in-section-inner {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+    -ms-flex-align: center;
             align-items: center;
   }
   /* Styles for slider*/
@@ -409,8 +373,7 @@ a.onward {
 
 @media all and (min-width: 768px) and (max-width: 1199px) {
   .header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
+    -ms-flex-pack: center;
             justify-content: center;
     min-height: 400px;
   }
@@ -446,19 +409,15 @@ a.onward {
     margin-left: 30px;
   }
   .in-section-inner {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
+    -ms-flex-align: end;
             align-items: flex-end;
   }
   #problems div.section-inner, #perspective div.section-inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
   #problems div.in-section-inner, #perspective div.in-section-inner {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
+    -ms-flex-align: start;
             align-items: flex-start;
   }
   /* Styles for slider*/
@@ -501,11 +460,9 @@ a.onward {
 @media all and (min-width: 1200px) {
   /* Styles for header*/
   .header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
+    -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+    -ms-flex-align: center;
             align-items: center;
     min-height: 450px;
   }
@@ -523,8 +480,7 @@ a.onward {
     font-size: 1.3em;
   }
   .side-bar {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
+    -ms-flex-pack: end;
             justify-content: flex-end;
   }
   .logo {
@@ -559,25 +515,19 @@ a.onward {
     margin-left: 30px;
   }
   .section-inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
+    -ms-flex-direction: row;
             flex-direction: row;
   }
   .in-section-inner {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
+    -ms-flex-align: end;
             align-items: flex-end;
   }
   #problems div.section-inner, #perspective div.section-inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
   #problems div.in-section-inner, #perspective div.in-section-inner {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
+    -ms-flex-align: start;
             align-items: flex-start;
   }
   /* Styles for slider*/

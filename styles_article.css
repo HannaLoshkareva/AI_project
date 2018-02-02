@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Play');
-html, body {
+@import url("https://fonts.googleapis.com/css?family=Play");
+html,
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   max-width: 1920px;
@@ -11,16 +17,30 @@ html, body {
 /* Styles for sections*/
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   margin: 180px 0 0;
 }
 
 .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -29,15 +49,20 @@ main {
   overflow: hidden;
 }
 
-.content, .share {
+.content,
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0 12vw;
 }
 
 .caption {
-  color: #E09635;
-  font-family: 'Play';
+  color: #e09635;
+  font-family: "Play";
   font-size: 2em;
   font-style: italic;
   letter-spacing: 1px;
@@ -51,7 +76,7 @@ main {
 }
 
 .date {
-  color: #827F7F;
+  color: #827f7f;
 }
 
 .author {
@@ -81,8 +106,9 @@ ul {
   text-align: center;
 }
 
-.subtitle, .share {
-  font-family: 'Play';
+.subtitle,
+.share {
+  font-family: "Play";
   font-size: 1.5em;
   font-style: italic;
   padding-bottom: 5px;
@@ -93,7 +119,8 @@ ul {
   padding: 15px 0 15px 40px;
 }
 
-.fa-quote-left, .fa-quote-right {
+.fa-quote-left,
+.fa-quote-right {
   padding: 0 10px;
 }
 
@@ -109,19 +136,19 @@ a.origin:hover {
 }
 
 a.origin:active {
-  color: #E6952E;
+  color: #e6952e;
   text-decoration: none;
 }
 
 a.origin:visited {
-  color: #5A009D;
+  color: #5a009d;
 }
 
 .share {
-  font-family: 'Play';
+  font-family: "Play";
   font-size: 1em;
   font-style: italic;
-  color: #E09635;
+  color: #e09635;
   margin-top: 20px;
 }
 
@@ -131,7 +158,7 @@ a.origin:visited {
 }
 
 .share-btn {
-  border: 1px solid #D0D0D0;
+  border: 1px solid #d0d0d0;
   text-decoration: none;
 }
 
