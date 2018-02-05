@@ -46,6 +46,10 @@ html, body {
           flex: 4;
 }
 
+.no-smil object.smil {
+  display: none;
+}
+
 svg {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
